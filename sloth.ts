@@ -4,8 +4,8 @@
 namespace sloth {
 
     export enum PWMChn {
-        Right_Leg = 6,
-        Right_Foot = 7,
+        Right_Leg = 10,
+        Right_Foot = 11,
         Left_Foot = 8,
         Left_Leg = 9,
         CH1 = 0,
@@ -14,8 +14,8 @@ namespace sloth {
         CH4 = 3,
         CH5 = 4,
         CH6 = 5,
-        CH7 = 10,
-        CH8 = 11,
+        CH7 = 6,
+        CH8 = 7,
         CH9 = 12,
         CH10 = 13,
         CH11 = 14,

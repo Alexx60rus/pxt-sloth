@@ -47,7 +47,7 @@ namespace sloth {
 
 
     let action_data = [
-        [    // walk
+        [    // чап
             //LL, LF, RL, RF
             [0, 45, 0, 20],
             [-30, 45, -30, 20],
@@ -419,7 +419,7 @@ namespace sloth {
     /**
      * Stand still: 4 servos turn to 90 degrees
      */
-    //% blockId=sloth_stand_still block="stand still"
+    //% blockId=sloth_stand_still block="Ноги прямо!"
     //% weight=100 blockGap=10
     export function stand_still(): void {
         let servo_targets = [0, 0, 0, 0];
@@ -429,7 +429,7 @@ namespace sloth {
     /**
      * Set offset for 4 servos: you can use block "calibrate" on "startup", to get the value to fill in the blank
      */
-    //% blockId=sloth_set_offset block="set offset | Right Leg %o3| Left Leg %o1| Right Foot %o4| Left Foot %o2"
+    //% blockId=sloth_set_offset block="Задать смещение | Right Leg %o3| Left Leg %o1| Right Foot %o4| Left Foot %o2"
     //% weight=45
     //% o1.min=-30 o1.max=30
     //% o2.min=-30 o2.max=30
@@ -573,7 +573,7 @@ namespace sloth {
     /**
      * Calibrate 4 servos by buttonA, buttonB, and A+B.
      */
-    //% blockId=sloth_cali_by_button block="calibrate"
+    //% blockId=sloth_cali_by_button block="Калибровка"
     //% weight=45 blockGap=10
     export function cali_by_button(): void {
         basic.showString("Cali")//brate 4 servos by button A, B & A+B")
@@ -681,7 +681,7 @@ namespace sloth {
      * The event mic get voice more then the threshold.
      * @param threshold ; eg: 550
      */
-    //% blockId=sloth_mic_get_voice block="on heard over |%threshold"
+    //% blockId=sloth_mic_get_voice block="услышанно громче |%threshold"
     //% threshold.min=0 threshold.max=1023
     //% weight=70 blockGap=10
     export function onHeard(threshold: number = 550, handler: Action) {
@@ -702,7 +702,7 @@ namespace sloth {
     /**
      * IR detect obstacle: IR on digital pin 12, when detected, pin 12 is low
      **/
-    //% blockId=sloth_IR_detect_obstacle block="obstacle detected"
+    //% blockId=sloth_IR_detect_obstacle block="Обнаружено препятствие"
     //% weight=55 blockGap=50
     export function obstacle_detected(): boolean {
         if (pins.digitalReadPin(DigitalPin.P12) == 0)
@@ -714,7 +714,7 @@ namespace sloth {
     /**
      * servo sweep
      **/
-    //% blockId=sloth_servo_sweep block="servo sweep"
+    //% blockId=sloth_servo_sweep block="Дрыг ногами ))) "
     //% weight=55
     export function servo_sweep(): void {
         let item = -90

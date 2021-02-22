@@ -643,7 +643,7 @@ namespace sloth {
     /**
      * Volume of the mic get.
      */
-    //% blockId=sloth_volume_of_heard block="volume of heard"
+    //% blockId=sloth_volume_of_heard block="Громкость услышанного"
     //% weight=65 blockGap=10
     export function volume_of_heard(): number {
         let volume: number = 0

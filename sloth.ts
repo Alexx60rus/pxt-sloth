@@ -183,7 +183,7 @@ namespace sloth {
     ]
 
     export enum action_name {
-        walk = 0,
+        чап = 0,
         walk_backward = 1,
         turn_left = 2,
         turn_right = 3,

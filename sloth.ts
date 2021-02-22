@@ -473,7 +473,7 @@ namespace sloth {
      * @param step ; eg: 1
      * @param speed ; eg: 50
      */
-    //% blockId=sloth_do_action block="%action=sloth_actions|%step|step in %speed|speed"
+    //% blockId=sloth_do_action block="%action=sloth_actions|%step|шагов in %speed|со скоростью"
     //% weight=98 blockGap=50
     //% speed.min=1 speed.max=100
     export function do_action(action: number, step: number = 1, speed: number = 50): void {

@@ -419,7 +419,7 @@ namespace sloth {
     /**
      * Stand still: 4 servos turn to 90 degrees
      */
-    //% blockId=sloth_stand_still block="Ноги прямо!"
+    //% blockId=sloth_stand_still block="Stand still"
     //% weight=100 blockGap=10
     export function stand_still(): void {
         let servo_targets = [0, 0, 0, 0];

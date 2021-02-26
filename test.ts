@@ -5,6 +5,6 @@ sloth.set_offset(
 7
 )
 basic.forever(() => {
-    sloth.do_action(sloth.action_name.Walk, 1, 50)
+    sloth.do_action(sloth.action_name.walk, 1, 50)
   
 })

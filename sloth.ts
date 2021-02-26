@@ -47,14 +47,14 @@ namespace sloth {
 
 
     let action_data = [
-        [    // чап
+        [    // walk
             //LL, LF, RL, RF
-            [0, 47, 0, 10],
-            [-30, 47, -30, 10],
+            [0, 47, 0, 25],
+            [-30, 47, -30, 25],
             [-30, 0, -30, 0],
 
-            [0, -10, 0, -47],
-            [30, -10, 30, -47],
+            [0, -25, 0, -47],
+            [30, -25, 30, -47],
             [30, 0, 30, 0],
         ],
         [    // walk backward
@@ -183,7 +183,7 @@ namespace sloth {
     ]
 
     export enum action_name {
-        Walk = 0,
+        walk = 0,
         walk_backward = 1,
         turn_left = 2,
         turn_right = 3,
